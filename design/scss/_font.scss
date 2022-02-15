@@ -1,0 +1,9 @@
+@mixin googleFonts($name) {
+  @import url("https://fonts.googleapis.com/css2?family=" + $name + "&display=swap");
+}
+
+@include googleFonts("Josefin+Sans");
+@include googleFonts("Montserrat");
+@include googleFonts("Roboto");
+@include googleFonts("Open+Sans");
+@include googleFonts("Poppins");
