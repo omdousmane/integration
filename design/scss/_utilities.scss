@@ -132,9 +132,7 @@
 .bg-secondary {
   background-color: $secondary;
 }
-.bg-aside {
-  background-color: $bg-secondary;
-}
+
 .text-primary {
   color: #000;
 }
@@ -145,20 +143,12 @@
   color: $text-secondary;
 }
 
-.price-secondary {
-  color: $price-secondary;
-}
-
 .link-secondary {
   color: $text-secondary;
 }
 
 .secondary {
   color: $border-color;
-}
-
-.title-primary {
-  color: $title-primary;
 }
 
 /***********reset**************/

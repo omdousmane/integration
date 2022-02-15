@@ -1,23 +1,14 @@
 /*================Primary=================*/
 
-$primary: #183a37;
-$primary-dark: darken(#183a37, 5%);
-$text-color-light: #fff;
-$primary-light: lighten(#183a37, 5%);
+$primary: #8ed0d9;
+$text-primary: #000000;
+$btn-primary: #db2540;
 
 /*================secondary=================*/
-$secondary: #265854;
-$secondary-dark: darken(#265854, 20%);
-$secondary-light: lighten(#265854, 20%);
-$text-secondary: #ededed;
+$secondary: #272727;
+$text-secondary: #ecc524;
 
 $border-color: #dedede;
-// $secondary: #ededed;
-$btn-primary: #183a37;
-$title-primary: #401126;
-$price-secondary: #feb205;
-$bg-secondary: darken($secondary, 20%);
-$background-light: #ecf0f1;
 
 $border: 1px solid #eee;
 $bg-primary-two: #ffccc6;
@@ -35,5 +26,6 @@ $montserrat: "Montserrat", sans-serif;
 
 $specimen: "Specimen", sans-serif;
 
+$noto-Sans: "Noto Sans", sans-serif;
 //$open-sans: "Open Sans", sans-serif;
 $modal-duration: 1s;

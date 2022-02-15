@@ -22,13 +22,13 @@
 }
 
 .btn-primary {
-  background-color: $primary-dark;
-  color: $text-color-light;
+  background-color: $primary;
+  color: $secondary;
 }
 
 .btn-danger {
   background-color: $danger;
-  color: $text-color-light;
+  color: $text-primary;
   border: 2px solid $danger;
 
   &:hover {

@@ -8,3 +8,20 @@
 @import "header";
 
 /*=========Main==========*/
+button {
+  font-family: $noto-Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  /* identical to box height, or 100% */
+  background-color: $btn-primary;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 200px;
+  color: #fffffd;
+}
