@@ -2,14 +2,8 @@
 
 /*******input **************/
 .btn-input {
-  @include btn-mixin($bg-color: white);
-  border: 1px solid $secondary;
-  &:focus {
-    outline: none;
-  }
-  ::placeholder {
-    font-style: italic;
-  }
+  @include input-mixin();
+  width: 520px;
 }
 
 .input-danger {

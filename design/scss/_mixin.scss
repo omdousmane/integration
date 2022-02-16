@@ -1,31 +1,36 @@
 /********button**************/
-@mixin btn-mixin($bg-color: $secondary) {
-  margin: 0 5px;
-  font-size: 1.2rem;
+@mixin btn-mixin($bg-color: $btn-primary) {
+  font-family: $noto-Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  background-color: $btn-primary;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  display: inline-block;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 0.7em 2em;
+  letter-spacing: 0.02em;
+  width: 200px;
+  border-radius: 5px;
+  color: #fffffd;
   -webkit-transition: all 250ms ease;
   -o-transition: all 250ms ease;
   transition: all 0.5s ease;
-  height: 45px;
 }
 
 /********input**************/
-@mixin input-mixin($bg-color: red) {
-  margin: 0 5px;
-  outline: none;
-  font-size: 1.2rem;
-  text-align: center;
-  display: inline-block;
-  background-color: red;
-  font-weight: 500;
+@mixin input-mixin() {
+  font-family: $noto-Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
   border-radius: 5px;
+  height: 45px;
+  border: 1px solid $text-secondary;
   cursor: pointer;
-  padding: 10px 15px;
   -webkit-transition: all 250ms ease;
   -o-transition: all 250ms ease;
   transition: all 0.5s ease;

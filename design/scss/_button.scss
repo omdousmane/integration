@@ -3,11 +3,12 @@
 /*****button******/
 .btn {
   @include btn-mixin();
-  background-color: $primary;
+  background-color: $btn-primary;
+  border: 2px solid $btn-primary;
   &:hover {
     color: #000;
-    background-color: #cecece;
-    border: 2px solid $primary;
+    background-color: #ffffff;
+    border: 2px solid $btn-primary;
   }
 }
 .button--state-success {
