@@ -22,28 +22,33 @@
       gap: 10px;
       .header-top__logo {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-flow: column wrap;
         justify-content: space-between;
         width: 100%;
+        margin: 0;
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
         .header-top__search {
           position: relative;
           .btn-input {
-            width: 150px;
-            height: 30px;
-            margin-left: 10px;
+            width: 100%;
+            height: 45px;
+            // margin-left: 10px;
             color: #c4c4c4;
           }
           ::placeholder {
-            padding-left: 30px;
+            padding-left: 50px;
             font-style: italic;
             font-weight: 400;
           }
           i {
             color: #c4c4c4;
             position: absolute;
-            top: 8px;
-            left: 20px;
+            top: 10px;
+            left: 15px;
+            font-size: 30px;
           }
         }
       }
