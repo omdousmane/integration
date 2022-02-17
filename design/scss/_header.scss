@@ -1,100 +1,87 @@
-.wrapper {
-  position: relative;
-  font-size: 16px !important;
-  max-width: 320px;
-  width: 100%;
-  margin: 10px auto;
+.header-mobile {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  .header-desktop,
-  .banner {
-    display: none;
-  }
-  .header-mobile {
+  width: 100%;
+  padding: 15px;
+  .header-top {
     display: flex;
-    width: 100%;
-    padding: 15px;
-    .header-top {
+    flex-direction: column;
+    gap: 10px;
+    .header-top__logo {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
-      .header-top__logo {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: space-between;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      img {
         width: 100%;
-        margin: 0;
-        img {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-        .header-top__search {
-          position: relative;
-          .btn-input {
-            width: 100%;
-            height: 45px;
-            // margin-left: 10px;
-            color: #c4c4c4;
-          }
-          ::placeholder {
-            padding-left: 50px;
-            font-style: italic;
-            font-weight: 400;
-          }
-          i {
-            color: #c4c4c4;
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 30px;
-          }
-        }
+        margin-bottom: 20px;
       }
-      .nav--connect {
-        display: flex;
-        flex-flow: row wrap;
-        flex: 1 0 auto;
-        align-items: flex-start;
-        gap: 10px;
-        .btn {
-          width: auto !important;
+      .header-top__search {
+        position: relative;
+        .btn-input {
+          width: 100%;
+          height: 45px;
+          color: #c4c4c4;
+        }
+        ::placeholder {
+          padding-left: 35px;
+          font-style: italic;
+          font-weight: 400;
+        }
+        .img__search {
+          position: absolute;
+          top: 13px;
+          left: 0.5rem;
+          color: #c4c4c4;
+        }
+        img {
+          height: 1.875rem;
         }
       }
     }
-  }
-
-  .header-menu__mobile {
-    z-index: 99999;
-    position: fixed;
-    bottom: 0px;
-    margin-top: 20px;
-    padding-top: 20px;
-    width: 320px;
-    border-radius: 15px 15px 0 0px;
-    background-color: #fff;
-    .nav--menu {
+    .nav--connect {
       display: flex;
+      flex-flow: row wrap;
+      flex: 1 0 auto;
+      align-items: flex-start;
+      gap: 10px;
+      .btn {
+        width: auto !important;
+      }
+    }
+  }
+}
+
+.header-menu__mobile {
+  z-index: 99999;
+  position: fixed;
+  bottom: 0px;
+  margin-top: 20px;
+  padding-top: 20px;
+  width: 100%;
+  border-radius: 15px 15px 0 0px;
+  background-color: #fff;
+  .nav--menu {
+    display: flex;
+    width: 100%;
+    .item {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      .item {
-        cursor: pointer;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-content: center;
-        align-items: center;
-        gap: 20px;
-        i {
-          font-size: 50px;
-          order: 1;
-          color: #000;
-        }
-        a {
-          color: #000;
-          order: 2;
-          font-size: 15px;
-        }
+      align-content: center;
+      align-items: center;
+      gap: 20px;
+      img {
+        // font-size: 10px;
+        height: 1.5625rem;
+        order: 1;
+        color: #000;
+      }
+      a {
+        color: #000;
+        order: 2;
+        font-size: 15px;
       }
     }
   }
@@ -194,35 +181,12 @@
         }
       }
     }
-    .main {
-      width: 100%;
-      display: flex;
-      .recipe-moment {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        :first-child {
-          border: 2px solid #000000;
-          transform: rotate(270deg);
-        }
-        :last-child {
-          border: 2px solid #000000;
-          transform: rotate(270deg);
-        }
-      }
-      .recipe-moment__card {
-        display: flex;
-        flex-flow: row wrap;
-        gap: 20px;
-        width: 100%;
-      }
-    }
   }
 }
 @media (min-width: 1280px) {
   .wrapper {
     background: blue;
-    max-width: 1280px;
+    // max-width: 1280px;
     width: 100%;
     .header-desktop {
       width: 100%;
@@ -253,9 +217,9 @@
     }
   }
   .banner {
-    height: 600px !important;
+    height: 600px;
     &__view-more {
-      padding: 20px !important;
+      padding: 20px;
       display: flex;
       align-self: center;
       h3 {

@@ -20,7 +20,9 @@
                     <div class="header-top__logo">
                         <img src="./assets/logo.svg" alt="logo">
                         <div class="header-top__search">
-                            <i class="fas fa-search"></i>
+                            <div class="img__search">
+                                <img src="./assets/magnifying-glass-solid.svg" alt="search">
+                            </div>
                             <input type="search" class="btn-input" placeholder="search">
                         </div>
                     </div>
@@ -30,26 +32,25 @@
                         <button class="btn p-10">Sans gluten</button>
                         <button class="btn p-10">Végétarien</button>
                     </div>
-
                 </nav>
             </section>
             <section class="header-menu__mobile">
                 <ul class="nav--menu">
                     <li class="item">
                         <a href="">Accueil </a>
-                        <i class="fas fa-home"></i>
+                        <img src="./assets/house-chimney-solid.svg" alt="home">
                     </li>
                     <li class="item">
                         <a href="">Parrcourir</a>
-                        <i class="fas fa-search"></i>
+                        <img src="./assets/magnifying-glass-solid.svg" alt="search">
                     </li>
                     <li class="item">
                         <a href="">Compte</a>
-                        <i class="far fa-user"></i>
+                        <img src="./assets/user-solid.svg" alt="user">
                     </li>
                     <li class="item">
                         <a href="">Panier</a>
-                        <i class="fas fa-shopping-basket"></i>
+                        <img src="./assets/shopping-basket-solid.svg" alt="panier">
                     </li>
                 </ul>
             </section>
@@ -85,22 +86,30 @@
             </section>
 
         </header>
-
+        <!-- end header -->
+        <!-- Main -->
         <main class="main">
             <div class="recipe-moment">
-                <span></span>
-                <h2>Recettes du moment</h2>
-                <span></span>
+                <span>
+                    <img src="./assets/Line 23.svg" alt="fleche gauche">
+                </span>
+                <h3>Recettes du moment</h3>
+                <span>
+                    <img src="./assets/Line 24.svg" alt="fleche droite">
+                </span>
             </div>
-
+            <!-- proposition du jour -->
             <article class="recipe-moment__card">
+                <div class="row">
+                    <img src="./assets/row.svg" alt="row">
+                </div>
                 <section class="main-card">
                     <div class="card__img">
                         <img src="./assets/salad-gdss.svg" alt="salade">
                     </div>
                     <div class="card__text">
-                        <h3>Nom du plat</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, id?</p>
+                        <h3>Avocats aux tomates</h3>
+                        <p>Un plat à base d’avocats et de tomates de saison</p>
                     </div>
                     <div class="card__price">
                         12€<span>8€</span>
@@ -120,8 +129,8 @@
                         <img src="./assets/salad-gd.svg" alt="plat 2" width="">
                     </div>
                     <div class="card__text">
-                        <h3>Nom du plat</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, id?</p>
+                        <h3>Oeufs aux légumes</h3>
+                        <p>Un plat à base d’oeufs et de légumes de saison</p>
                     </div>
                     <div class="card__price">
                         18€<span>12€</span>
@@ -141,8 +150,8 @@
                         <img src="./assets/salad-gd2b70949d_1920-removebg-preview 1.svg" alt="plat 3">
                     </div>
                     <div class="card__text">
-                        <h3>Nom du plat</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, id?</p>
+                        <h3>Riz au poulet</h3>
+                        <p>Un plat à base de riz et de poulet</p>
                     </div>
                     <div class="card__price">
                         12€<span>8€</span>
@@ -157,8 +166,94 @@
                         -20%
                     </div>
                 </section>
+                <!-- end proposition -->
+                <div class="row">
+                    <img src="./assets/row-right.svg" alt="row-right">
+                </div>
+            </article>
+            <!-- Premier container -->
+            <article class="firs-container">
+                <h2>Ils nous ont fait confiance</h2>
+                <section class="container">
+                    <div class="container__puce">
+                        <h3>Un service exceptionnel, recommandé à 100% par nos clients</h3>
+                        <ul>
+                            <li>Bouf’Right sélectionne pour vous des restaurants ayant de la nourriture saine.</li>
+                            <li>Nos critères de qualité et d’équilibre alimentaire permettent de vous assurer une bonne
+                                alimentation</li>
+                            <li>Vous avez le choix entre sur place, livraison, ou à emporter.</li>
+                        </ul>
+                        <div class="container__puce--btn">
+                            <p>Vous voulez en savoir plus ?</p>
+                            <button class="btn">Je decouvre</button>
+                        </div>
+                    </div>
+                    <div class="container__img">
+                        <img src="./assets/pexels.svg" alt="man eating">
+                    </div>
+                </section>
+            </article>
+            <article class="parrcourse">
+                <h2>Comment ça marche ?</h2>
+                <div class="parrcourse__img">
+                    <img src="./assets/chemin.svg" alt="parrcourse utilisateur">
+                </div>
             </article>
         </main>
+        <footer class="footer">
+            <article class="footer-menu">
+                <span class="footer-menu__line"></span>
+                <ul>
+                    <li>
+                        <h3>RETROUVEZ NOUS SUR</h3>
+                    </li>
+                    <li>
+                        <img src="./assets/store1.png" alt="playStore">
+                    </li>
+                    <li>
+                        <img src="./assets/store2.svg" alt="appleStore">
+                    </li>
+                </ul>
+                <span class="footer-menu__line"></span>
+                <ul>
+
+                    <li>
+                        <h3>DECOUVRER</h3>
+                    </li>
+                    <li>
+                        <P>Qui sommes nous ?</P>
+                    </li>
+                    <li>
+                        <P>Les avis clients</P>
+                    </li>
+                </ul>
+                <span class="footer-menu__line"></span>
+                <ul>
+                    <li>
+                        <h3>CONTACT</h3>
+                    </li>
+                    <li>
+                        <P>Nous contacter</P>
+                    </li>
+                    <li>
+                        <P>CGV</P>
+                    </li>
+                </ul>
+                <!-- <div class="footer-menu__socials">
+                    <span class="footer__line"></span>
+                    <div class="footer--socials__img">
+                        <img src="./assets/fb.svg" alt="facebook">
+                        <img src="./assets/linkedin-fill.svg" alt="linkedin">
+                        <img src="./assets/twitter.svg" alt="twitter">
+                        <img src="./assets/instagram.svg" alt="instagram">
+                    </div>
+                    <span class="footer__line"></span>
+                </div>
+                <div>Bouf’Right <img src="./assets/copie.svg" alt="copieRigth"></div> -->
+            </article>
+
+
+        </footer>
     </div>
 </body>
 
