@@ -15,10 +15,14 @@
     <div class="wrapper">
         <!-- header mobile  -->
         <header class="header">
-            <div class="header-mobile">
-                <div class="header-top">
-                    <div class="header-top__logo">
+            <section class="header-mobile">
+                <nav class="header-top">
+                    <div class="header-top__logo mb-20">
                         <img src="./assets/Logo-mobile.png" alt="logo" srcset="">
+                        <div class="header-top__search">
+                            <i class="fas fa-search"></i>
+                            <input type="search" class="btn-input" placeholder="search">
+                        </div>
                     </div>
                     <div class="nav--connect">
                         <button class="btn p-10">Vegan</button>
@@ -27,41 +31,12 @@
                         <button class="btn p-10">Végétarien</button>
                     </div>
 
-                </div>
-            </div>
-            <!-- header  -->
-            <div class="header-desktop">
-                <div class="header-menu">
-                    <div class="header-menu__logo flex">
-                        <img src="./assets/image 1.png" alt="logo" srcset="">
-                    </div>
-                    <ul class="header-menu__nav flex">
-                        <li class="item"><a href="">Acceuil </i></a></li>
-                        <li class="item"><a href="">A propos</a></li>
-                        <li class="item"><a href="">Offre du moment</a></li>
-                        <li class="item"><a href="">S'abonner</a></li>
-                    </ul>
-                    <div class="header-menu__connect flex">
-                        <button class="btn">Connexion</button>
-                        <div class="circle">
-                            <i class="fas fa-shopping-basket"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="banner">
-                <div class="banner__view-more">
-                    <h3>Un service exceptionnel, recommandé à 100% par nos clients</h3>
-                    <button class="btn">Je decouvre</button>
-                </div>
-                <div class="banner__img">
-                    <img src="./assets/Group 90.svg" alt="" srcset="">
-                </div>
+                </nav>
             </section>
-            <section class="footer-mobile">
+            <section class="header-menu__mobile">
                 <ul class="nav--menu">
                     <li class="item">
-                        <a href="">Acceuil </a>
+                        <a href="">Accueil </a>
                         <i class="fas fa-home"></i>
                     </li>
                     <li class="item">
@@ -78,6 +53,37 @@
                     </li>
                 </ul>
             </section>
+            <!-- header  -->
+            <section class="header-desktop">
+                <div class="header-menu">
+                    <div class="header-menu__logo">
+                        <img src="./assets/image 1.png" alt="logo" srcset="">
+                    </div>
+                    <ul class="header-menu__nav">
+                        <li class="item"><a href="">Accueil </i></a></li>
+                        <li class="item"><a href="">A propos</a></li>
+                        <li class="item"><a href="">Offre du moment</a></li>
+                        <li class="item"><a href="">S'abonner</a></li>
+                    </ul>
+                    <div class="header-menu__connect">
+                        <button class="btn">Connexion</button>
+                        <div class="circle">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner -->
+            <section class="banner">
+                <div class="banner__view-more">
+                    <h3>Un service exceptionnel, recommandé à 100% par nos clients</h3>
+                    <button class="btn">Je decouvre</button>
+                </div>
+                <div class="banner__img">
+                    <img src="./assets/Group 90.svg" alt="man">
+                </div>
+            </section>
+
         </header>
 
         <main class="main">
@@ -90,7 +96,7 @@
             <article class="recipe-moment__card">
                 <section class="main-card">
                     <div class="card__img">
-                        <img src="./assets/salad.png" alt="salade" alt="" width="204px" height="136px">
+                        <img src="./assets/salad.png" alt="salade">
                     </div>
                     <div class="card__text">
                         <h3>Nom du plat</h3>
@@ -98,6 +104,27 @@
                     </div>
                     <div class="card__price">
                         12€<span>8€</span>
+                    </div>
+                    <div class="card__btn">
+                        <button class="btn">Ajouter au panier</button>
+                    </div>
+                    <div class="card__more">
+                        <a href="#">plus d'info</a>
+                    </div>
+                    <div class="card__reduct">
+                        -40%
+                    </div>
+                </section>
+                <section class="main-card">
+                    <div class="card__img">
+                        <img src="./assets/anna-pelzer-IGfIGP5ONV0-unsplash-removebg-preview.png" alt="plat 2">
+                    </div>
+                    <div class="card__text">
+                        <h3>Nom du plat</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, id?</p>
+                    </div>
+                    <div class="card__price">
+                        18€<span>12€</span>
                     </div>
                     <div class="card__btn">
                         <button class="btn">Ajouter au panier</button>
@@ -111,8 +138,7 @@
                 </section>
                 <section class="main-card">
                     <div class="card__img">
-                        <img src="./assets/baiq-daling-ykThMylLsbY-unsplash-removebg-preview.png" alt="salade" alt=""
-                            width="204px" height="136px">
+                        <img src="./assets/salmon-g36e6b396d_1920-removebg-preview.png" alt="plat 3">
                     </div>
                     <div class="card__text">
                         <h3>Nom du plat</h3>
@@ -128,7 +154,7 @@
                         <a href="#">plus d'info</a>
                     </div>
                     <div class="card__reduct">
-                        -50%
+                        -20%
                     </div>
                 </section>
             </article>
