@@ -1,21 +1,8 @@
 /*************font*************/
-.poppins {
-  font-family: $poppins;
-}
-.specimen {
-  font-family: $specimen;
+.noto-sans {
+  font-family: $noto-Sans;
 }
 
-.roboto {
-  font-family: $roboto;
-}
-
-.josefin-sans {
-  font-family: $josefin-sans;
-}
-.montserrat {
-  font-family: $montserrat;
-}
 .bold {
   font-weight: 700;
 }
@@ -38,9 +25,6 @@
 }
 
 /*******border*******/
-.has-bb {
-  border-bottom: 1px solid $border-color;
-}
 
 .border-radius {
   border-radius: 20px;

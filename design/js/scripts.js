@@ -1,40 +1,28 @@
-/* modal */
-// const modalBtns = document.querySelectorAll("#modal-btn");
+let headerDesktop = document.querySelector(".header-desktop");
+let headerMobile = document.querySelector(".header-menu__mobile");
+console.log(headerMobile);
+let ticking = false;
 
-// les functions
-// function deletesProd(deletesId) {
-//   // console.log(deletesId);
-//   // confirm("Êtes-vous sûr de vouloir supprimer?");
+window.addEventListener("scroll", function (e) {
+  scrollPosition = window.scrollY;
+  if (scrollPosition <= 1000 || scrollPosition >= 2200) {
+    headerDesktop.classList.add("slide-bottom");
+    headerDesktop.classList.remove("slide-top");
+    headerDesktop.style.display = "flex";
+  } else {
+    headerDesktop.classList.add("slide-top");
+    headerDesktop.classList.remove("slide-bottom");
+    headerDesktop.style.display = "none";
+  }
+  if (screen.width <= 760) {
+    headerDesktop.style.display = "none";
+    headerDesktop.classList.add("slide-bottom");
+  }
+  if (!ticking) {
+    window.requestAnimationFrame(function () {
+      ticking = false;
+    });
+  }
 
-//   if (window.XMLHttpRequest) {
-//     xmlhttp = new XMLHttpRequest();
-//   } else {
-//     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-//   }
-//   xmlhttp.onreadystatechange = function () {
-//     if (this.readyState == 4 && this.status == 200) {
-//       document.getElementById("txt").innerHTML = this.responseText;
-//       // let sucess = document.querySelector(".success");
-//       // if (sucess) {
-//       // }
-//     }
-//   };
-//   xmlhttp.open(
-//     "GET",
-//     "../../controllers/delete-product.php?read=" + deletesId,
-//     true
-//   );
-//   xmlhttp.send();
-// }
-
-modalBtns.forEach((modalBtn) => {
-  modalBtn.addEventListener("click", (e) => {
-    let rep = confirm("voulez-vous vraiment supprimer ce produit?");
-    if (rep == true) {
-      // deletesProd(modalBtn.value);
-      // setTimeout(openModal, 1000);
-    } else {
-      alert("Suppression annulée");
-    }
-  });
+  ticking = true;
 });

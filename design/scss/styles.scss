@@ -1,4 +1,5 @@
 @import "font";
+@import "animation";
 @import "variable";
 @import "modal";
 @import "utilities";
@@ -11,23 +12,19 @@
 /*=========Main==========*/
 body {
   background-color: $primary;
+  font-family: $noto-Sans;
+  // width: 98%;
+  // padding: 2%;
 }
 .wrapper {
   // border: 1px solid red;
   position: relative;
   font-size: 16px;
-  width: 100%;
-  margin: 10px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
-  height: 100%;
-  .header-desktop,
-  .banner,
-  .recipe-moment {
-    display: none;
-  }
+  // display: flex;
+  // flex-flow: row wrap;
+  // justify-content: center;
+  // align-items: center;
+
   /******main******/
 
   .main {
@@ -51,18 +48,17 @@ body {
     .main-card {
       position: relative;
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       justify-content: center;
       align-items: center;
       gap: 10px;
-      width: 250px;
-      height: auto;
+      width: 280px;
+      height: 500px;
       background: #fffffd;
       border-radius: 10px;
       margin-bottom: 20px;
       .card__img {
-        margin: 0 auto;
-        width: 200px;
+        // width: 200px;
         img {
           width: 100%;
         }
@@ -72,7 +68,8 @@ body {
         padding: 10px;
         text-align: center;
         h3 {
-          margin: 0px 0 10px 0;
+          // margin: 0px 0 10px 0;
+          // line-height: 0;
         }
       }
       .card__price {
@@ -112,56 +109,70 @@ body {
     .firs-container {
       // border: 1px solid red;
       display: flex;
-      justify-content: center;
-      flex-flow: row wrap;
+      width: 100%;
+      flex-flow: column wrap;
       align-items: center;
-      margin-top: 20px;
-      gap: 20px;
-      // width: 200px;
-
+      justify-content: center;
+      h2 {
+        text-align: center;
+        margin: 4rem;
+      }
       .container {
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        height: auto;
-        gap: 20px;
-      }
-      .container__puce {
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 10px;
-        width: 300px;
-        // height: 300px;
-
-        &--btn {
+        gap: 10px;
+        .container__puce {
+          background-color: #ffffff;
+          // border-radius: 10px;
+          padding: 10px;
+          li {
+            margin-left: 15px;
+            list-style: circle;
+          }
+          h3 {
+            text-align: center;
+            margin-top: 0px;
+          }
+          &--btn {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            // text-transform: uppercase;
+            :first-child {
+              font-size: 0.9rem;
+            }
+            :nth-child(2) {
+              text-transform: uppercase;
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .container__img {
           display: flex;
-          flex-flow: column nowrap;
-          align-items: center;
-        }
-        h3 {
-          margin-top: 0;
-          margin-bottom: 20px;
-        }
-        li {
-          margin-left: 15px;
-          list-style: circle;
+          align-self: center;
+          img {
+            width: 100%;
+            // border-radius: 10px;
+          }
         }
       }
-      .container__img {
-        width: 300px;
-
-        img {
-          width: 100%;
-          border-radius: 10px;
-        }
+      .container > * {
+        // flex: 1 0 280px;
+        width: 330px;
+        height: 500px;
       }
     }
   }
   .parrcourse {
     width: 100%;
     margin-bottom: 120px;
-
+    h2 {
+      text-align: center;
+      margin: 4rem;
+    }
     img {
       width: 100%;
     }
@@ -214,27 +225,80 @@ body {
 }
 
 @media (min-width: 760px) {
-  .main {
-    width: 100%;
-    .recipe-moment {
-      display: flex;
-      text-align: center;
-      font-size: 1.25rem;
+  .wrapper {
+    .main {
+      padding: 0;
       width: 100%;
-      align-items: center;
-      justify-content: space-between;
-      img {
+      .recipe-moment {
+        padding: 15px;
+        margin: 0 1.5rem 0 1.5rem;
+        display: flex;
+        text-align: center;
+        font-size: 1.25rem;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-size: 2.625rem;
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+      }
+      .recipe-moment__card {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
         width: 100%;
       }
+      .main-card {
+        width: 350px;
+        font-size: 16px;
+        .card__text {
+          h3 {
+            font-size: 1.375rem;
+          }
+        }
+      }
+      .firs-container {
+        // position: absolute;
+        // top: 50px;
+        // bottom: 50px;
+        width: 100%;
+        // border: 1px solid white;
+        .container {
+          display: flex;
+          flex-flow: row wrap;
+          // justify-content: space-between;
+          gap: 0px;
+          .container__puce {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .container > * {
+          // flex: 1 0 280px;
+          width: calc(50%);
+          height: 72vh;
+        }
+      }
     }
-    .row {
-      display: none;
-    }
-    .recipe-moment__card {
+    .footer {
       display: flex;
-      flex-flow: row wrap;
-      gap: 20px;
       width: 100%;
+      .footer-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
     }
   }
 }

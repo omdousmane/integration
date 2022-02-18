@@ -1,10 +1,6 @@
-@mixin googleFonts($name) {
-  @import url("https://fonts.googleapis.com/css2?family=" + $name + "&display=swap");
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../../fonts/NotoSans-Regular.ttf");
+  // src: url("../../fonts/NotoSans-Bold.ttf");
+  // src: url("../../fonts/NotoSans-Italic.ttf");
 }
-
-@include googleFonts("Josefin+Sans");
-@include googleFonts("Montserrat");
-@include googleFonts("Roboto");
-@include googleFonts("Open+Sans");
-@include googleFonts("Poppins");
-@include googleFonts("Noto+Sans");
