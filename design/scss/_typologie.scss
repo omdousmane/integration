@@ -82,7 +82,7 @@ ol ul {
 hr,
 .hr {
   border: 1px solid;
-  margin: -1px 0;
+  // margin: -1px 0;
 }
 a,
 b,
@@ -104,4 +104,8 @@ sup {
 }
 sub {
   bottom: -0.25em;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
 }

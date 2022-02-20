@@ -79,7 +79,6 @@
       align-items: center;
       gap: 20px;
       img {
-        // font-size: 10px;
         height: 1.5625rem;
         order: 1;
         color: #000;
@@ -93,10 +92,9 @@
   }
 }
 
-/*tablette*/
+/*Media querie*/
 @media (min-width: 760px) {
   .wrapper {
-    // background: red;
     width: 100%;
 
     .header-mobile,
@@ -131,16 +129,17 @@
           display: flex;
           align-items: flex-end;
           justify-content: flex-end;
-          // margin-right: 20px;
           gap: 20px;
 
           height: 40%;
           a {
-            font-size: 1.25rem;
+            font-size: 16px;
+            font-weight: bold;
             color: #000;
           }
         }
         &__connect {
+          margin-left: 20px;
           width: calc(100% / 4);
 
           display: flex;
@@ -160,25 +159,23 @@
             border-radius: 100px;
             background-color: #ffffff;
             border: 2px solid $btn-primary;
-            i {
+            img {
               color: $btn-primary;
             }
           }
         }
       }
     }
-    .slide-bottom {
-      -webkit-animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        both;
-      animation: slide-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    .header-animated {
+      transition: margin-top 0.5s ease-in-out;
+      margin-top: -10rem;
     }
-    .slide-top {
-      -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        both;
-      animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    .fixed-top {
+      transition: margin-bottom 0.5s ease-in-out;
+      margin-top: 0;
     }
     .banner {
-      padding-top: 250px;
+      padding-top: 200px;
 
       display: flex;
       align-self: center;
@@ -217,64 +214,3 @@
     }
   }
 }
-@media (min-width: 1280px) {
-  .wrapper {
-    background-color: green;
-  }
-}
-//   .wrapper {
-//     background: blue;
-//     // max-width: 1280px;
-//     width: 100%;
-//     .header-desktop {
-//       width: 100%;
-//       .header-menu {
-//         &__logo {
-//           width: 20%;
-//           img {
-//             width: 100%;
-//           }
-//         }
-//         &__nav {
-//           width: 65%;
-//           font-size: 24px;
-//         }
-//         &__connect {
-//           width: 15%;
-//           .btn {
-//             width: 120px;
-//             font-size: 18px;
-//           }
-//           .circle {
-//             width: 50px;
-//             height: 50px;
-//             font-size: 24px;
-//           }
-//         }
-//       }
-//     }
-//   }
-//   .banner {
-//     height: 600px;
-//     &__view-more {
-//       padding: 20px;
-//       display: flex;
-//       align-self: center;
-//       h3 {
-//         font-size: 60px;
-//         line-height: 80px;
-//       }
-//       .btn {
-//         padding: 30px;
-//       }
-//     }
-//     &__img {
-//       display: flex;
-//       align-self: center;
-//       width: 50%;
-//       img {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }

@@ -46,7 +46,7 @@
                     </li>
                     <li class="item">
                         <a href="">Compte</a>
-                        <img src="./assets/user-solid.svg" alt="user">
+                        <img src="./icons/user-solid.svg" alt="user">
                     </li>
                     <li class="item">
                         <a href="">Panier</a>
@@ -55,13 +55,13 @@
                 </ul>
             </section>
             <!-- header  -->
-            <section class="header-desktop">
+            <section class="header-desktop" id="autofixed">
                 <div class="header-menu">
                     <div class="header-menu__logo">
                         <img src="./assets/logo.svg" alt="logo">
                     </div>
                     <ul class="header-menu__nav">
-                        <li class="item"><a href="">Accueil </i></a></li>
+                        <li class="item"><a href="">Accueil</a></li>
                         <li class="item"><a href="">A propos</a></li>
                         <li class="item"><a href="">Offre du moment</a></li>
                         <li class="item"><a href="">S'abonner</a></li>
@@ -91,17 +91,17 @@
         <main class="main">
             <div class="recipe-moment">
                 <span>
-                    <img src="./assets/Line 23.svg" alt="fleche gauche">
+                    <img src="./icons/Line 23.svg" alt="fleche gauche">
                 </span>
                 <h3>Recettes du moment</h3>
                 <span>
-                    <img src="./assets/Line 24.svg" alt="fleche droite">
+                    <img src="./icons/Line 24.svg" alt="fleche droite">
                 </span>
             </div>
             <!-- proposition du jour -->
             <article class="recipe-moment__card">
                 <div class="row">
-                    <img src="./assets/row.svg" alt="row">
+                    <img src="./icons/row.svg" alt="row">
                 </div>
                 <section class="main-card">
                     <div class="card__img">
@@ -168,7 +168,7 @@
                 </section>
                 <!-- end proposition -->
                 <div class="row">
-                    <img src="./assets/row-right.svg" alt="row-right">
+                    <img src="./icons/row-right.svg" alt="row-right">
                 </div>
             </article>
             <!-- Premier container -->
@@ -199,11 +199,63 @@
                     <img src="./assets/chemin.svg" alt="parrcourse utilisateur">
                 </div>
             </article>
+            <article class="comment">
+                <h2>Ils n’ont pas été déçus !</h2>
+                <div class="comment-content">
+                    <section class="comment-container">
+                        <div class="comment__img">
+                            <img src="./assets/Ellipse 5.svg" alt="photo 1">
+                        </div>
+                        <div class="comment__text">
+                            <h4>Ylane B</h4>
+                            <p>
+                                “Pour des restaurants sains et pas cher c’est le must !”
+                            </p>
+                        </div>
+                    </section>
+                    <section class="comment-container">
+                        <div class="comment__img">
+                            <img src="./assets/Ellipse 2.svg" alt="photo 1">
+                        </div>
+                        <div class="comment__text">
+                            <h4>Jean F</h4>
+                            <p>
+                                ‘’Je suis très satisfait des plats que j’ai acheté sur Bouf’right’’
+                            </p>
+                        </div>
+                    </section>
+                    <section class="comment-container">
+                        <div class="comment__img">
+                            <img src="./assets/Ellipse 3.svg" alt="photo 1">
+                        </div>
+                        <div class="comment__text">
+                            <h4>Cedric P</h4>
+                            <p>
+                                ‘’Je trouve toujours mon bonheur sur ce site.’’
+                            </p>
+                        </div>
+                    </section>
+                    <section class="comment-container">
+                        <div class="comment__img">
+                            <img src="./assets/Ellipse 4.svg" alt="photo 1">
+                        </div>
+                        <div class="comment__text">
+                            <h4>Sarah V</h4>
+                            <p>
+                                ‘’Il y a tout ce qu’il me faut sur Bouf’Right !’’
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </article>
         </main>
         <!-- footer -->
         <footer class="footer">
+            <!-- <div>
+                <div class="footer-menu__line"></div>
+            </div> -->
+            <hr class="hr">
             <article class="footer-menu">
-                <span class="footer-menu__line"></span>
                 <ul>
                     <li>
                         <h3>RETROUVEZ NOUS SUR</h3>
@@ -212,12 +264,10 @@
                         <img src="./assets/store1.png" alt="playStore">
                     </li>
                     <li>
-                        <img src="./assets/store2.svg" alt="appleStore">
+                        <img src="./icons/store2.svg" alt="appleStore">
                     </li>
                 </ul>
-                <span class="footer-menu__line"></span>
                 <ul>
-
                     <li>
                         <h3>DECOUVRER</h3>
                     </li>
@@ -228,7 +278,6 @@
                         <P>Les avis clients</P>
                     </li>
                 </ul>
-                <span class="footer-menu__line"></span>
                 <ul>
                     <li>
                         <h3>CONTACT</h3>
@@ -240,17 +289,18 @@
                         <P>CGV</P>
                     </li>
                 </ul>
-                <!-- <div class="footer-menu__socials">
-                    <span class="footer__line"></span>
-                    <div class="footer--socials__img">
-                        <img src="./assets/fb.svg" alt="facebook">
-                        <img src="./assets/linkedin-fill.svg" alt="linkedin">
-                        <img src="./assets/twitter.svg" alt="twitter">
-                        <img src="./assets/instagram.svg" alt="instagram">
-                    </div>
-                    <span class="footer__line"></span>
+                <!-- <span class="footer-menu__line"></span> -->
+                <div class="footer-menu__socials">
+                    <span class="footer-menu__line"></span>
+                    <ul class="footer-menu__img">
+                        <li><img src="./icons/fb.svg" alt="facebook"></li>
+                        <li><img src="./icons/linkedin-fill.svg" alt="linkedin"></li>
+                        <li><img src="./icons/twitter.svg" alt="twitter"></li>
+                        <li><img src="./icons/instagram.svg" alt="instagram"></li>
+                    </ul>
+                    <span class="footer-menu__line"></span>
                 </div>
-                <div>Bouf’Right <img src="./assets/copie.svg" alt="copieRigth"></div> -->
+                <div class="copieright">Bouf’Right <img src="./assets/copie.svg" alt="copieRigth">2022</div>
             </article>
 
 
